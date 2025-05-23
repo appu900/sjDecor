@@ -60,14 +60,14 @@ const Hero = () => {
       className="relative h-screen flex items-center justify-center overflow-hidden bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage:
-          "url(https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1920)",
+          "url(https://img.freepik.com/free-photo/armchair-green-living-room-with-copy-space_43614-910.jpg?semt=ais_hybrid&w=740)",
       }}
     >
       <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80 backdrop-blur-sm"></div>
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 z-10">
         <div className="max-w-3xl mx-auto text-center">
-          <p className="font-semibold text-white mb-2 text-xl">Design starts at ₹499</p>
+          <p className="font-semibold text-white mb-2 text-xl">Design starts at <span className="text-white underline">₹499</span></p>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
             <span className="block text-white">Designing</span>
             <span className="block bg-gradient-to-r from-cyan-400 to-pink-500 text-transparent bg-clip-text">
