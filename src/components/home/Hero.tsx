@@ -67,7 +67,7 @@ const Hero = () => {
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 z-10">
         <div className="max-w-3xl mx-auto text-center">
-          <p>Desi</p>
+  
           <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
             <span className="block text-white">Designing</span>
             <span className="block bg-gradient-to-r from-cyan-400 to-pink-500 text-transparent bg-clip-text">
