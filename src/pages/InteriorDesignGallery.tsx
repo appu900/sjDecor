@@ -1,24 +1,9 @@
+
+
+
 import React, { useState, useEffect } from "react";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
-import RESTRO1 from "../assets/Restaurant 1.jpg";
-import RESTRO2 from "../assets/Restaurant 2.jpg";
-import RESTRO3 from "../assets/Restaurant 3.jpg";
-import RESTRO4 from "../assets/Restaurant 4.jpg";
-import RESTRO5 from "../assets/Restaurant 5.jpg";
-import RESTRO6 from "../assets/Restaurant 6.jpg";
-import RESTRO7 from "../assets/Restaurant 7.jpg";
-import RESTRO8 from "../assets/Restaurant 8.jpg";
-import RESTRO9 from "../assets/Restaurant 9.jpg";
-import RESTRO10 from "../assets/Restaurant 10.jpg";
-import MANDAP1 from "../assets/Mandap 1.jpg";
-import MANDAP2 from "../assets/Mandap 2.jpg";
-import MANDAP3 from "../assets/Mandap 3.jpg";
-import MANDAP4 from "../assets/Mandap 4.jpg";
-import MANDAP5 from "../assets/Mandap 5.jpg";
-import BEDROOM1 from "../assets/Bedroom 1.jpg";
-import BEDROOM2 from "../assets/Bedroom 2.jpg";
-import BEDROOM3 from "../assets/Bedroom 3.jpg";
-import RESIDENTIAL from "../assets/Residential 1.jpg";
+
 
 // Define our project types
 interface Project {
@@ -36,14 +21,14 @@ const InteriorDesignGallery: React.FC = () => {
       id: 1,
       title: "Modern Living Room",
       category: "residential",
-      imageUrl: RESTRO1,
+      imageUrl:"https://res.cloudinary.com/djtgnaque/image/upload/v1748014827/IMG-20250401-WA0012_zfa6kk.jpg",
       description: "Contemporary design with clean lines and neutral palette",
     },
     {
       id: 2,
       title: "Luxury Kitchen",
       category: "kitchen",
-      imageUrl: RESTRO2,
+      imageUrl: "https://res.cloudinary.com/djtgnaque/image/upload/v1747990416/IMG-20250405-WA0007_zpmcvj.jpg",
       description:
         "High-end finishes with marble countertops and custom cabinetry",
     },
@@ -51,121 +36,121 @@ const InteriorDesignGallery: React.FC = () => {
       id: 3,
       title: "Minimalist Bedroom",
       category: "bedroom",
-      imageUrl: RESTRO3,
+      imageUrl: "https://res.cloudinary.com/djtgnaque/image/upload/v1748014825/IMG-20250401-WA0014_s658wi.jpg",
       description:
         "Tranquil space with essential elements and natural materials",
     },
     {
       id: 4,
-      title: "Corporate Office",
+      title: "Living Room Wardrobe",
       category: "commercial",
-      imageUrl: RESTRO4,
+      imageUrl: "https://res.cloudinary.com/djtgnaque/image/upload/v1747990415/IMG-20250418-WA0007_hrcaut.jpg",
       description: "Professional environment optimized for productivity",
     },
     {
       id: 5,
-      title: "Boutique Hotel Lobby",
+      title: "Living Room Wardrob",
       category: "commercial",
-      imageUrl: RESTRO5,
+      imageUrl: "https://res.cloudinary.com/djtgnaque/image/upload/v1747990415/IMG-20250418-WA0001_u5voo6.jpg",
       description:
         "Elegant entrance with custom furniture and artistic lighting",
     },
     {
       id: 6,
-      title: "Bathroom Retreat",
+      title: "Restaurant Retreat",
       category: "Restaurant",
-      imageUrl: RESTRO6,
+      imageUrl: "https://res.cloudinary.com/djtgnaque/image/upload/v1747990417/IMG-20250405-WA0001_xuyctt.jpg",
       description: "Spa-like bathroom with luxury fixtures and natural stone",
     },
     {
       id: 7,
       title: "Fine Dining Restaurant",
       category: "Restaurant",
-      imageUrl: RESTRO7,
+      imageUrl: "https://res.cloudinary.com/djtgnaque/image/upload/v1748014824/IMG-20250402-WA0006_jrnlnu.jpg",
       description: "Sophisticated dining space with perfect ambiance",
     },
     {
       id: 8,
       title: "Open Concept Living",
       category: "Restaurant",
-      imageUrl: RESTRO8,
+      imageUrl: "https://res.cloudinary.com/djtgnaque/image/upload/v1748014827/IMG-20250402-WA0007_cu677u.jpg",
       description: "Seamless flow between kitchen, dining and living areas",
     },
     {
       id: 9,
       title: "Home Office",
       category: "Restaurant",
-      imageUrl: RESTRO9,
+      imageUrl: "https://res.cloudinary.com/djtgnaque/image/upload/v1748014828/IMG-20250402-WA0001_p6jmzs.jpg",
       description: "Functional workspace blending aesthetics and practicality",
     },
     {
       id: 10,
       title: "Modern Workspace",
       category: "Restaurant",
-      imageUrl: RESTRO10,
+      imageUrl: "https://res.cloudinary.com/djtgnaque/image/upload/v1748014844/IMG-20250405-WA0007_kc6h4s.jpg",
       description: "Contemporary workspace designed for creativity and focus",
     },
     {
       id: 11,
-      title: "Marriage Mandap",
-      category: "Mandap",
-      imageUrl: MANDAP1,
+      title: "Home Design",
+      category: "residential",
+      imageUrl: "https://res.cloudinary.com/djtgnaque/image/upload/v1748014826/IMG-20250416-WA0000_rcudfl.jpg",
       description: "Contemporary workspace designed for creativity and focus",
     },
     {
       id: 12,
       title: "Marriage Mandap",
       category: "Mandap",
-      imageUrl: MANDAP2,
+      imageUrl: "https://res.cloudinary.com/djtgnaque/image/upload/v1748015342/IMG-20250401-WA0004_1_pscjqr.jpg",
       description: "Contemporary workspace designed for creativity and focus",
     },
     {
       id: 13,
       title: "Marriage Mandap",
       category: "Mandap",
-      imageUrl: MANDAP3,
+      imageUrl: "https://res.cloudinary.com/djtgnaque/image/upload/v1748015342/IMG-20250401-WA0004_1_pscjqr.jpg",
       description: "Contemporary workspace designed for creativity and focus",
     },
     {
       id: 14,
       title: "Marriage Mandap",
       category: "Mandap",
-      imageUrl: MANDAP4,
+      imageUrl: "https://res.cloudinary.com/djtgnaque/image/upload/v1747990414/IMG-20250401-WA0005_lvopoo.jpg",
       description: "Contemporary workspace designed for creativity and focus",
     },
     {
       id: 15,
       title: "Marriage Mandap",
       category: "Mandap",
-      imageUrl: MANDAP5,
+      imageUrl: "https://res.cloudinary.com/djtgnaque/image/upload/v1747990415/IMG-20250401-WA0004_hrmnle.jpg",
       description: "Contemporary workspace designed for creativity and focus",
     },
     {
       id: 16,
-      title: "Bedroom",
-      category: "bedroom",
-      imageUrl: BEDROOM3,
+      title: "Dining Room",
+      category: "residential",
+      imageUrl: "https://res.cloudinary.com/djtgnaque/image/upload/v1748014823/IMG-20250418-WA0015_jft3bs.jpg",
       description: "Contemporary workspace designed for creativity and focus",
     },
     {
       id: 17,
       title: "Bedroom",
       category: "bedroom",
-      imageUrl: BEDROOM1,
+      imageUrl: "https://res.cloudinary.com/djtgnaque/image/upload/v1748014822/IMG-20250418-WA0028_1_kvydav.jpg",
       description: "Contemporary workspace designed for creativity and focus",
     },
     {
       id: 18,
       title: "Bedroom",
       category: "bedroom",
-      imageUrl: BEDROOM2,
+      imageUrl: "https://res.cloudinary.com/djtgnaque/image/upload/v1748014825/IMG-20250401-WA0014_s658wi.jpg",
       description: "Contemporary workspace designed for creativity and focus",
     },
     {
       id: 19,
       title: "Dining Room",
       category: "residential",
-      imageUrl: RESIDENTIAL,
+      imageUrl: "https://res.cloudinary.com/djtgnaque/image/upload/v1747990414/IMG-20250401-WA0015_1_pl6xsd.jpg",
       description: "Contemporary workspace designed for creativity and focus",
     },
   ];
